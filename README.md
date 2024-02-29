@@ -1,6 +1,6 @@
 <h1> Hi, I'm Manoel Felipe! </h1>
 
-<h3> I am a computer's science student at PUCPR 👨‍💻 </h3>
+<h3> I am a Computer Scientist who graduated at PUCPR and doing a Master in Artificial Intelligence 👨‍💻 </h3>
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/manoelbina.02?igshid=YmMyMTA2M2Y=)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manoel-felipe-de-almeida-bina-640821234)
