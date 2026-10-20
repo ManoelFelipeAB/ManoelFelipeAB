@@ -15,15 +15,21 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "assets", "langs.svg")
 HIDE = {"Jupyter Notebook"}
 TOP_N = 8
 
-# Cores vivas na ordem do ranking
-PALETTE = ["#2F6BFF",  # azul escuro
-           "#A3FF12",  # verde-lima
-           "#FF8C1A",  # laranja
-           "#00E5FF",  # azul ciano
-           "#FFD43B",  # amarelo
-           "#A5D8FF",  # azul bebê
-           "#FF4D9D",  # rosa
-           "#A78BFA"]  # lilás
+# Cor de cada linguagem = mesma cor da badge dela em "Technologies I've Used".
+# Linguagens sem badge usam a cor da marca/logo oficial.
+COLORS = {
+    "Python": "#3776AB", "Java": "#ED8B00", "HTML": "#E34F26",
+    "TypeScript": "#3178C6", "JavaScript": "#F7DF1E", "CSS": "#1572B6",
+    "Jupyter Notebook": "#F37626",
+    "Haskell": "#8A7CC8", "C#": "#239120", "C++": "#00599C", "Clojure": "#5881D8",
+}
+# Para linguagens novas que ainda não estão no mapa acima
+FALLBACK = ["#A3FF12", "#00E5FF", "#FF4D9D", "#FFD43B", "#A78BFA", "#A5D8FF"]
+
+
+def color_for(name, i):
+    return COLORS.get(name, FALLBACK[i % len(FALLBACK)])
+
 
 _RAW = {"Python": 28.25, "Java": 27.36, "HTML": 13.48, "Haskell": 8.50,
         "C#": 7.58, "C++": 7.22, "Clojure": 5.04, "TypeScript": 2.57}
@@ -72,7 +78,7 @@ def render(data):
     segs, x = [], pad
     for i, (_, pct) in enumerate(langs):
         seg_w = bar_w * pct / 100
-        segs.append(f'<rect x="{x:.2f}" y="{bar_y}" width="{seg_w + 0.5:.2f}" height="{bar_h}" fill="{PALETTE[i]}"/>')
+        segs.append(f'<rect x="{x:.2f}" y="{bar_y}" width="{seg_w + 0.5:.2f}" height="{bar_h}" fill="{color_for(langs[i][0], i)}"/>')
         x += seg_w
 
     legend = []
@@ -80,7 +86,7 @@ def render(data):
         col, row = i // rows, i % rows
         lx, ly = pad + col * 150, 90 + row * 25
         legend.append(
-            f'<circle cx="{lx + 5}" cy="{ly - 4}" r="5" fill="{PALETTE[i]}"/>'
+            f'<circle cx="{lx + 5}" cy="{ly - 4}" r="5" fill="{color_for(name, i)}"/>'
             f'<text x="{lx + 15}" y="{ly}" {font} font-size="11" fill="{TEXT}">{escape(name)} {pct:.2f}%</text>')
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Most Used Languages">
