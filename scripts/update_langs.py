@@ -12,8 +12,8 @@ from xml.sax.saxutils import escape
 
 USER = "ManoelFelipeAB"
 OUT = os.path.join(os.path.dirname(__file__), "..", "assets", "langs.svg")
-HIDE = {"Jupyter Notebook", "Haskell", "Clojure"}
-TOP_N = 6
+HIDE = {"Jupyter Notebook"}
+TOP_N = 8
 
 # Cores vivas na ordem do ranking
 PALETTE = ["#2F6BFF",  # azul escuro
@@ -21,10 +21,12 @@ PALETTE = ["#2F6BFF",  # azul escuro
            "#FF8C1A",  # laranja
            "#00E5FF",  # azul ciano
            "#FFD43B",  # amarelo
-           "#A5D8FF"]  # azul bebê
+           "#A5D8FF",  # azul bebê
+           "#FF4D9D",  # rosa
+           "#A78BFA"]  # lilás
 
-_RAW = {"Python": 28.25, "Java": 27.36, "HTML": 13.48,
-        "C#": 7.58, "C++": 7.22, "TypeScript": 2.57}
+_RAW = {"Python": 28.25, "Java": 27.36, "HTML": 13.48, "Haskell": 8.50,
+        "C#": 7.58, "C++": 7.22, "Clojure": 5.04, "TypeScript": 2.57}
 SEED = {k: v * 100 / sum(_RAW.values()) for k, v in _RAW.items()}
 
 BG, TITLE, TEXT = "#0D1117", "#A3FF12", "#F0F6FC"
