@@ -9,7 +9,7 @@
 <img src="assets/typing.svg" alt="Master's student in AI @ PUCPR | Optimizing LLM prompts with GEPA | TypeScript · React · Python | Always learning, always building"/>
 
 #
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ManoelFelipeAB&layout=compact&hide=jupyter%20notebook&langs_count=8&hide_border=true&bg_color=0D1117&title_color=50FA7B&text_color=F0F6FC)](https://github.com/anuraghazra/github-readme-stats)
+<img src="assets/langs.svg" alt="Most Used Languages"/>
 
 <h2> Technologies I've Used </h2>
 
