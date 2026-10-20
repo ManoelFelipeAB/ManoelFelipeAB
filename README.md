@@ -9,7 +9,7 @@
 <img src="assets/typing.svg" alt="Master's student in AI @ PUCPR | Optimizing LLM prompts with GEPA | TypeScript · React · Python | Always learning, always building"/>
 
 #
-<img src="assets/langs.svg" alt="Most Used Languages"/>
+<img src="assets/languages.svg" alt="Most Used Languages"/>
 
 <h2> Technologies I've Used </h2>
 

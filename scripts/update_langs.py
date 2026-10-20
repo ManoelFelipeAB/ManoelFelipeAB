@@ -1,4 +1,4 @@
-"""Gera assets/langs.svg: card "Most Used Languages" com cores vivas próprias.
+"""Gera assets/languages.svg: card "Most Used Languages" com cores vivas próprias.
 
 Uso:
   python scripts/update_langs.py            -> busca os dados na API do GitHub (precisa de GITHUB_TOKEN)
@@ -11,7 +11,7 @@ import urllib.request
 from xml.sax.saxutils import escape
 
 USER = "ManoelFelipeAB"
-OUT = os.path.join(os.path.dirname(__file__), "..", "assets", "langs.svg")
+OUT = os.path.join(os.path.dirname(__file__), "..", "assets", "languages.svg")
 HIDE = {"Jupyter Notebook"}
 TOP_N = 8
 
