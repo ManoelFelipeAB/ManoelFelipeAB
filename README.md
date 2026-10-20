@@ -6,13 +6,7 @@
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manoel-felipe-de-almeida-bina-640821234)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:manoelfelipe.s33@gmail.com)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=F78166&width=620&lines=Master%27s+student+in+AI+%40+PUCPR;Building+SaaS+with+Next.js+%2B+TypeScript+%2B+Supabase;Optimizing+LLM+prompts+with+GEPA)](https://git.io/typing-svg)
-
-<h2> What I'm working on </h2>
-
-- 🎓 Finishing my Master's at PUCPR, researching automatic prompt optimization (GEPA) for LLMs
-- 🏗️ Building a multi-tenant SaaS for construction management with Next.js, TypeScript and Supabase
-- 🌐 Freelance websites and chatbots for health and engineering professionals
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=F78166&width=620&lines=Master%27s+student+in+AI+%40+PUCPR;Optimizing+LLM+prompts+with+GEPA;TypeScript+%C2%B7+React+%C2%B7+Python)](https://git.io/typing-svg)
 
 #
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ManoelFelipeAB&layout=compact&hide=jupyter%20notebook&langs_count=8&hide_border=true&bg_color=0D1117&title_color=F78166&text_color=C9D1D9)](https://github.com/anuraghazra/github-readme-stats)
